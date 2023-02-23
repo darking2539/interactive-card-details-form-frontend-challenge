@@ -213,7 +213,7 @@ function App() {
           <div className='flex rounded-xl p-8 ml-[-50px]' style={{ backgroundImage: `url(${CardFront})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%" }}>
             <div className='flex flex-col flex-start'>
               <div><img src={CardLogo} /></div>
-              <div className='mt-10 w-[300px] text-white text-xl font-bold tracking-[3px] mr-5'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 00000"}</div>
+              <div className='mt-10 w-[300px] text-white text-xl font-bold tracking-[3px] mr-5'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 0000"}</div>
               <div className='flex justify-between mt-5'>
                 <div className='text-xs tracking-[1px] text-white'>{form?.cardName ? upperCaseTransform(form?.cardName) : "JANE APPLESEED"}</div>
                 <div className='text-xs tracking-[1px] text-white'>{form?.expMonth ? form?.expMonth : "00"}/{form?.expYear ? form?.expYear : "00"}</div>
@@ -232,7 +232,7 @@ function App() {
           <div className='flex rounded-xl p-8 ml-[-50px] mt-[-100px]' style={{ backgroundImage: `url(${CardFront})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%", zIndex: 2 }}>
             <div className='flex flex-col flex-start'>
               <div><img src={CardLogo} /></div>
-              <div className='mt-10 w-[300px] text-white text-xl font-bold tracking-[3px] mr-5'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 00000"}</div>
+              <div className='mt-10 w-[300px] text-white text-xl font-bold tracking-[3px] mr-5'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 0000"}</div>
               <div className='flex justify-between mt-5'>
                 <div className='text-xs tracking-[1px] text-white'>{form?.cardName ? upperCaseTransform(form?.cardName) : "JANE APPLESEED"}</div>
                 <div className='text-xs tracking-[1px] text-white'>{form?.expMonth ? form?.expMonth : "00"}/{form?.expYear ? form?.expYear : "00"}</div>
