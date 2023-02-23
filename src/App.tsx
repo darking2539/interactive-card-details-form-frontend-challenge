@@ -204,7 +204,7 @@ function App() {
   }
 
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       <div className='hidden md:flex md:items-center md:absolute' style={{ backgroundImage: `url(${bgDesktop})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%", height: "100vh", width: "30%", zIndex: -1 }} />
       <div className='md:hidden flex items-center absolute' style={{ backgroundImage: `url(${bgMobile})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%", height: "30vh", width: "100%", zIndex: -1 }} />
       <div className='flex flex-col md:flex-row md:justify-evenly place-items-center min-w-[320px] min-h-[100vh]'>
@@ -213,7 +213,7 @@ function App() {
           <div className='flex rounded-xl p-8 ml-[-50px]' style={{ backgroundImage: `url(${CardFront})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%" }}>
             <div className='flex flex-col flex-start'>
               <div><img src={CardLogo} /></div>
-              <div className='mt-10 w-[280px] text-white text-xl font-bold tracking-[3px] mr-10'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 0000"}</div>
+              <div className='mt-10 w-[300px] text-white text-xl font-bold tracking-[3px] mr-5'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 00000"}</div>
               <div className='flex justify-between mt-5'>
                 <div className='text-xs tracking-[1px] text-white'>{form?.cardName ? upperCaseTransform(form?.cardName) : "JANE APPLESEED"}</div>
                 <div className='text-xs tracking-[1px] text-white'>{form?.expMonth ? form?.expMonth : "00"}/{form?.expYear ? form?.expYear : "00"}</div>
@@ -225,14 +225,14 @@ function App() {
           </div>
         </div>
         {/* Mobile */}
-        <div className='md:hidden sm:scale-[0.9] scale-[0.8]'>
+        <div className='md:hidden sm:scale-[0.8] scale-[0.7]'>
           <div className='relative rounded-xl py-28 mr-[-50px]' style={{ backgroundImage: `url(${CardBack})`, backgroundSize: "100% 100%", zIndex: -1 }}>
             <div className='fixed absolute top-[100px] right-[40px]'>{form?.cvc ? form?.cvc : "000"}</div>
           </div>
           <div className='flex rounded-xl p-8 ml-[-50px] mt-[-100px]' style={{ backgroundImage: `url(${CardFront})`, backgroundRepeat: "no-repeat", backgroundSize: "100% 100%", zIndex: 2 }}>
             <div className='flex flex-col flex-start'>
               <div><img src={CardLogo} /></div>
-              <div className='mt-10 w-[280px] text-white text-xl font-bold tracking-[3px] mr-10'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 0000"}</div>
+              <div className='mt-10 w-[300px] text-white text-xl font-bold tracking-[3px] mr-5'>{form?.cardNumber ? form?.cardNumber : "0000 0000 0000 00000"}</div>
               <div className='flex justify-between mt-5'>
                 <div className='text-xs tracking-[1px] text-white'>{form?.cardName ? upperCaseTransform(form?.cardName) : "JANE APPLESEED"}</div>
                 <div className='text-xs tracking-[1px] text-white'>{form?.expMonth ? form?.expMonth : "00"}/{form?.expYear ? form?.expYear : "00"}</div>
